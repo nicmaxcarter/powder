@@ -36,6 +36,19 @@ body {
   text-shadow: 0.1em 0 #ff3e41;
 }
 
+#thank-you-btn {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  padding-top: 1em;
+  padding-left: .5em;
+}
+
+#thank-you-btn-sub {
+  align-self: flex-start;
+  background: #ff3e41
+}
+
 .full-height {
   display: flex;
   flex-direction: column;
