@@ -33,7 +33,14 @@ body {
 
 .hero-txt.special {
   font-size: 5em;
-  text-shadow: .1em 0 #ff3e41;
+  text-shadow: 0.1em 0 #ff3e41;
+}
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .powder {
@@ -113,14 +120,22 @@ textarea {
   z-index: -1;
 }
 
-input[type=submit],
-.floated-label-wrapper textarea[type=text],
-.floated-label-wrapper input[type=text],
-.floated-label-wrapper input[type=email],
-.floated-label-wrapper input[type=password] {
+input[type="submit"],
+.floated-label-wrapper textarea[type="text"],
+.floated-label-wrapper input[type="text"],
+.floated-label-wrapper input[type="email"],
+.floated-label-wrapper input[type="password"] {
   border-radius: 5px;
   font-size: 1em;
   padding: 0.5em;
+}
+
+input[type="submit"]:hover {
+  background: #111111;
+}
+
+input[type="submit"]:visited {
+  background: #111111;
 }
 
 /* This line calls the jquery function */
@@ -162,14 +177,14 @@ input[type=submit],
     border-top: 55px solid #111111;
   }
 
-  input[type=submit],
+  input[type="submit"],
   .floated-label-wrapper textarea[type="text"],
   .floated-label-wrapper input[type="text"],
   .floated-label-wrapper input[type="email"],
   .floated-label-wrapper input[type="password"] {
     border-radius: 5px;
     font-size: 1.25em;
-    padding: .5em;
+    padding: 0.5em;
   }
 
   .floated-label-wrapper input[type="text"],
@@ -185,12 +200,11 @@ input[type=submit],
   .hero-txt {
     font-size: 6em;
   }
-  
+
   .hero-txt.special {
     font-size: 7em;
   }
-  
-  
+
   .powder img {
     padding-top: 20px;
     max-width: 200px;
@@ -203,6 +217,23 @@ input[type=submit],
 
 /* Large and up */
 @media screen and (min-width: 64em) {
+  #hero {
+    padding: 1em 3em;
+  }
+
+  .hero-txt {
+    font-size: 9em;
+    text-align: left;
+  }
+
+  .hero-txt.special {
+    font-size: 10em;
+    text-align: left;
+  }
+
+  .powder img {
+    max-width: 350px;
+  }
 }
 
 /* Large only */
