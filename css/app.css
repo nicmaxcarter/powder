@@ -1,0 +1,210 @@
+body {
+  /* background: #111111; */
+}
+
+.continue {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  background: #ff3e41;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.isosceles-triangle {
+  margin: -5px !important;
+}
+
+#hero {
+  background: #111111;
+  /* background:indianred; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-txt {
+  font-size: 4em;
+  line-height: 1em;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.hero-txt.special {
+  font-size: 5em;
+  text-shadow: .1em 0 #ff3e41;
+}
+
+.powder {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.powder img {
+  align-self: center;
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#contact-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact-form {
+  padding: 10px;
+}
+
+.center {
+  align-self: center;
+}
+
+#footer {
+  color: #8a8a8a;
+  background: #111111;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #727272;
+}
+
+/* Form styling */
+
+input,
+textarea {
+  border-radius: 5px !important;
+}
+
+.floated-label-wrapper {
+  position: relative;
+}
+
+.floated-label-wrapper label {
+  background: #fefefe;
+  color: #1779ba;
+  font-size: 0.75rem;
+  font-weight: 600;
+  left: 0.75rem;
+  opacity: 0;
+  padding: 0 0.25rem;
+  position: absolute;
+  top: 2rem;
+  transition: all 0.15s ease-in;
+  z-index: -1;
+}
+
+input[type=submit],
+.floated-label-wrapper textarea[type=text],
+.floated-label-wrapper input[type=text],
+.floated-label-wrapper input[type=email],
+.floated-label-wrapper input[type=password] {
+  border-radius: 5px;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+/* This line calls the jquery function */
+.floated-label-wrapper label.show {
+  opacity: 1;
+  top: -0.85rem;
+  z-index: 1;
+  transition: all 0.15s ease-in;
+}
+
+.custom-submit {
+  background: #ff3e41;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .hero-txt {
+    font-size: 4em;
+    line-height: 1em;
+    width: 100%;
+  }
+
+  .isosceles-triangle {
+    width: 0;
+    height: 0;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-top: 40px solid #111111;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .isosceles-triangle {
+    width: 0;
+    height: 0;
+    border-left: 85px solid transparent;
+    border-right: 85px solid transparent;
+    border-top: 55px solid #111111;
+  }
+
+  input[type=submit],
+  .floated-label-wrapper textarea[type="text"],
+  .floated-label-wrapper input[type="text"],
+  .floated-label-wrapper input[type="email"],
+  .floated-label-wrapper input[type="password"] {
+    border-radius: 5px;
+    font-size: 1.25em;
+    padding: .5em;
+  }
+
+  .floated-label-wrapper input[type="text"],
+  .floated-label-wrapper input[type="email"],
+  .floated-label-wrapper input[type="password"] {
+    height: 2em;
+  }
+
+  .floated-label-wrapper textarea[type="text"] {
+    height: 3.5em;
+  }
+
+  .hero-txt {
+    font-size: 6em;
+  }
+  
+  .hero-txt.special {
+    font-size: 7em;
+  }
+  
+  
+  .powder img {
+    padding-top: 20px;
+    max-width: 200px;
+  }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+}
